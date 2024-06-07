@@ -10,8 +10,8 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/users',[CustomAuthController::class, 'index']);
 Route::post('/users',[CustomAuthController::class, 'upload']);
-Route::put('/users/edit{id}', [CustomAuthController::class, 'edit']);
-Route::delete('/users/edit{id}', [CustomAuthController::class, 'delete']);
+Route::put('/users/edit/{id}', [CustomAuthController::class, 'edit']);
+Route::delete('/users/edit/{id}', [CustomAuthController::class, 'delete']);
 
     
 
